@@ -10,6 +10,8 @@ export default function Meme() {
 
   const [allMemeImages, setAllMemeImages] = React.useState(memesData);
 
+  //Getting error in vscode because setAllMediaImages is defined but never used.
+
   function getMemeImage() {
     const memesArray = allMemeImages.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
